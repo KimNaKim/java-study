@@ -9,6 +9,7 @@ public class Employee {
     private String account;     //계좌번호
     private String position;    //직급
 
+    //생성자(이름과 전화번호만 알 때)
     Employee(String name, String phone){
         this.name = name;
         this.phone = phone;
@@ -18,7 +19,7 @@ public class Employee {
         this.account = "";
         this.position = "사원";
     }
-
+    //생성자2(이름 전화번호 부서를 알 때)
     Employee(String name, String phone, String dept){
         this.name = name;
         this.phone = phone;
@@ -28,7 +29,7 @@ public class Employee {
         this.account = "";
         this.position = "사원";
     }
-
+    //생성자3(모든 정보를 알 때)
     Employee(String name,
              String phone,
              String dept,
