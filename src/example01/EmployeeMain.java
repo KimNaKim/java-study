@@ -10,7 +10,7 @@ public class EmployeeMain {
         }
     }
 
-    //월급&연봉 정산하기
+    //총월급계산
     static public int calcTotalMonthSalary(Employee[] e, int count){
         int totalSalary = 0;
         for(int i = 0; i<count; i++){
@@ -18,7 +18,7 @@ public class EmployeeMain {
         }
         return totalSalary;
     }
-
+    //총연봉계산
     static public int calcTotalYearSalary(Employee[] e, int count){
         int totalSalary = 0;
         for(int i = 0; i<count; i++){
@@ -26,7 +26,7 @@ public class EmployeeMain {
         }
         return totalSalary;
     }
-
+    //총연봉계산(직급보너스포함)
     static public int calcTotalYearSalaryWithBonus(Employee[] e, int count){
         int totalSalary = 0;
         for(int i = 0; i<count; i++){
