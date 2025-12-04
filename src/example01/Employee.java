@@ -69,7 +69,10 @@ public class Employee {
     public String getName() { return name;}
     public int getSalary(){ return salary;}
     public String getAccount(){ return account;}
-    public int getEmpNo(){return empNo;}
+    public int getEmpNo(){ return empNo;}
+    public String getPhone(){ return phone;}
+    public String getDept(){ return dept;}
+    public String getPosition(){ return position;}
 
     //연봉 계산 메서드
     int calcYearSalary(){ return this.salary*12;}

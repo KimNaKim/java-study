@@ -51,6 +51,7 @@ public class EmployeeMain {
         }
     }
 
+    //계좌이체 알람
     static void paySalary(Employee e){
         System.out.println("[급여 이체 완료] : " +
                 e.getName() + "님께 " +
