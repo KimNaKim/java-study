@@ -2,7 +2,7 @@ package ex04.game;
 
 public class GameApp {
 
-    //u1이 u2를 공격하는 함수
+    /*//u1이 u2를 공격하는 함수
     static void start(Zealot u1, Dragoon u2){
         //u1과 u2는 start 스택에 존재
         u2.hp -= u1.attack;
@@ -16,6 +16,10 @@ public class GameApp {
     }
     static void start(Dragoon u1, Dragoon u2){
         u2.hp -= u1.attack;
+    }*/
+
+    static void start(Protoss u1, Protoss u2){
+        u2.setHp(u2.getHp()- u1.getAttack());
     }
 
     public static void main(String[] args) {
