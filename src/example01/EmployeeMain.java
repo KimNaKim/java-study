@@ -3,10 +3,10 @@ package example01;
 
 public class EmployeeMain {
 
-    //전체 사원 목록 출력
+    //전체 사원 목록 출력 - 향상된 for문 사용
     static public void printAllEmployees(Employee[] employees, int count){
-        for(int i = 0; i<count; i++){
-            employees[i].printInfo();
+        for(Employee e : employees){
+            e.printInfo();
         }
     }
 
