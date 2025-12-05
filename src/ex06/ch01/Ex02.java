@@ -23,13 +23,13 @@ class English extends Europian{     //영국인
 
 public class Ex02 {
     public static void main(String[] args) {
-        Earthian p1 = new Europian();
-        Earthian p2 = new Asian();
-        Europian p3 = new English();
-        Asian p4 = new Japanese();
-        Asian p5 = new Korean();
-        Earthian p6 = new Korean();
-        Earthian p7 = new English();
+        Earthian p1 = new Europian();   //유럽인은 지구인이다
+        Earthian p2 = new Asian();      //아시아인은 지구인이다
+        Europian p3 = new English();    //영국인은 유럽인이다
+        Asian p4 = new Japanese();      //일본인은 아시아인이다
+        Asian p5 = new Korean();        //한국인은 아시아인이다
+        Earthian p6 = new Korean();     //한국인은 지구인이다
+        Earthian p7 = new English();    //영국인은 지구인이다
         Korean p8 = new Korean();
         //하위 클래스는 타입 선택의 다양성이 존재(다형성)
 
