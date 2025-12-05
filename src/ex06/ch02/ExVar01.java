@@ -1,5 +1,6 @@
 package ex06.ch02;
 
+//변수의 상속
 class Animal {
     int i = 1;
     String name = "동물";
