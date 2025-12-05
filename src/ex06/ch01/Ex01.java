@@ -18,8 +18,5 @@ public class Ex01 {
         Rabbit u2 = new Rabbit();
         Judge u3 = new King();
         Judge u4 = new Queen();
-
-
-
     }
 }
