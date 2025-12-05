@@ -3,8 +3,9 @@ package ex06.ch02;
 
 
 //메서드의 상속
-class Car {
-    void run(){}
+abstract class Car {
+    //추상 클래스(하위 클래스의 상속으로밖에 띄우지 못함)
+    abstract void run();
 }
 class Sonata extends Car{
     //부모 클래스에 존재하는 메서드를 재정의
