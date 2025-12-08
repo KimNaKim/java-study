@@ -13,7 +13,7 @@ class Data{
     }
 }
 
-public class MyHash extends Object {
+public class MyHash01 extends Object {
     static void main() {
         //상태가 같은 2개의 Data 클래스 선언
         Data d1 = new Data(1);
