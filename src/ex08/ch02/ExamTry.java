@@ -14,12 +14,7 @@ public class ExamTry {
     }
 
     void searchArr(int index){
-        try{
-            System.out.println("찾으시는 배열 공간의 값은 : "+arr[index]);
-        } catch(RuntimeException e){
-            System.out.println("잘못된 인덱스 번호입니다.");
-            System.out.println("[0~2]까지 입력 가능합니다.");
-        }
+        System.out.println("찾으시는 배열 공간의 값은 : "+arr[index]);
 
     }
 
@@ -33,7 +28,12 @@ public class ExamTry {
             int index = sc.nextInt();
 
             // try 코드를 여기에 작성하세요.
-            examTry.searchArr(index);
+            try{
+                examTry.searchArr(index);
+            } catch(RuntimeException e){
+                System.out.println("잘못된 인덱스 번호입니다.");
+                System.out.println("[0~2]까지 입력 가능합니다.");
+            }
         }
     }
 }

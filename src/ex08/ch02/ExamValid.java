@@ -14,13 +14,7 @@ public class ExamValid {
     }
 
     void searchArr(int index){
-        if(index <= 2 && index >=0){
-            System.out.println("찾으시는 배열 공간의 값은 : "+arr[index]);
-        } else {
-            System.out.println("잘못된 인덱스 번호입니다.");
-            System.out.println("[0~2]까지 입력 가능합니다.");
-        }
-
+        System.out.println("찾으시는 배열 공간의 값은 : "+arr[index]);
     }
 
     // 문제 : 잘못된 인덱스 번호를 넣으면 "[0~2]까지 입력가능합니다"라고 출력해주세요!!
@@ -34,7 +28,12 @@ public class ExamValid {
             int index = sc.nextInt();
 
             // if 코드를 여기에 작성하세요.
-            examTry.searchArr(index);
+            if(index <= 2 && index >=0){
+                examTry.searchArr(index);
+            } else {
+                System.out.println("잘못된 인덱스 번호입니다.");
+                System.out.println("[0~2]까지 입력 가능합니다.");
+            }
         }
     }
 }
