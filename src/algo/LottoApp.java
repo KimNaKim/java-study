@@ -5,18 +5,21 @@ import java.util.Random;
 public class LottoApp {
     static void main() {
         Random random = new Random();
-        int[] arr = {0,0,0,0,0,0,0,0,0,0};
+        int[] arr = new int[6];
         int count = 0;
 
-        //로또번호 개수 추첨하기
-        while(count < 10){
-            //중복검사
+        //로또번호 추첨하기
+        while(count < 6){
             boolean isDup = false;
-            int num = random.nextInt(99);
-            for(int i = 0; i<count; i++){
-                if(arr[count] == num){
-                    isDup = true;
+            int num = random.nextInt(45)+1;
+            try{
+                for(int i = 0; i<count; i++){
+                    if(arr[i] == num){
+                        isDup = true;
+                    }
                 }
+            }catch (Exception e){
+                arr[count] = 0;
             }
             if(!isDup){
                 arr[count] = num;
