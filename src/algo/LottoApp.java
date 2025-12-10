@@ -12,13 +12,13 @@ public class LottoApp {
         while(count < 6){
             boolean isDup = false;
             int num = random.nextInt(45)+1;
-            try{
+            try{        //중복검사
                 for(int i = 0; i<count; i++){
                     if(arr[i] == num){
                         isDup = true;
                     }
                 }
-            }catch (Exception e){
+            }catch (RuntimeException e){ //초기화되지 않은 배열 참조 오류 해결용
                 arr[count] = 0;
             }
             if(!isDup){
@@ -26,6 +26,7 @@ public class LottoApp {
                 count++;
             }
         }
+        //출력하기
         System.out.print("로또번호 : ");
         for(int i= 0; i<arr.length; i++){
 
