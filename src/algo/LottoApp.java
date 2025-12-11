@@ -3,7 +3,7 @@ package algo;
 import java.util.Random;
 
 public class LottoApp {
-    static void main() {
+    public static void main(String[] args) {
         Random random = new Random();
         int[] arr = new int[6];
         int count = 0;

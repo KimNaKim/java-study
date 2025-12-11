@@ -26,7 +26,7 @@ class Controller{
 
 
 public class try02 {
-    static void main() {
+    public static void main(String[] args) {
         Controller.login("ssar123","1233");
     }
 }
