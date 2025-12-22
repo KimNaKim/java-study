@@ -6,7 +6,7 @@ public class BTreeNode {
     int n;                 // 현재 키 개수
     int[] keys;            // 키 배열
     BTreeNode[] children;  // 자식 노드
-    boolean isLeaf;        // 노드에 자식 노드가 존재하는지(가지가 뻗어 있는지)
+    boolean isLeaf;        // 노드가 자식 노드를 가지고 있는 상태인지
 
     BTreeNode(int t, boolean isLeaf) {
         this.t = t;

@@ -1,5 +1,6 @@
 package algo.btree;
 
+//BTreeNode를 노드로 사용하는 B-Tree 컬렉션
 public class BTree {
     //맨 꼭대기 노드
     BTreeNode root;
