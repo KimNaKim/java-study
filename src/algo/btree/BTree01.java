@@ -14,7 +14,7 @@ public class BTree01 {
         btree.traverse();
         System.out.println();
 
-        int key = 12;
+        int key = 10;
         System.out.println(
                 key + " 검색 결과: " +
                         (btree.search(key) != null ? "존재함" : "없음")
